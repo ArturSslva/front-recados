@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    background-image: url(../images/Classroom-anime-Japan_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.card {
+    background-color: #48313180;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d9c5be;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #d9c5be;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition:  all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #483131;
+}
+
+.label-float label {
+    color: #d9c5be;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label  {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+button {
+    background-color: transparent;
+    border-color: #d9c5be;
+    color: #d9c5be;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #d9c5be;
+    color: #fff;
+    transition: all .4s ease-out;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p {
+    color: #d9c5be;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a {
+    color: #3f3149;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d9c5be;
+    transition: all .3s ease-out;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #d9c5be;
+}
+
+#msgErro, #msgErroLogin {
+ text-align: center;
+ color: #ff6363;
+ background-color: #ffbbbb;
+ padding: 10px;
+ border-radius: 4px;
+ display: none;
+}
+
+#msgSucesso {
+    text-align: center;
+    color: #008b8b;
+    background-color: #befce8;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

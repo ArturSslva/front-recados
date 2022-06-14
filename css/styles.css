@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/anime-blackboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #f2f2ff;
+}
+
+.container-errand {
+    position: absolute;
+    padding: 15px;
+    top: 15%;
+    left: 10%;
+    justify-content: center;
+    max-width: 1500px;
+    width: 95%;
+    background-color: #21292d;
+    border-radius: 5px
+}
+
+.container-errand .header {
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.header .button-add {
+    margin-right: 210px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #4f6747;
+    color: white
+}
+
+#sair-button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #4f6747;
+    color: white;
+    border: none;
+}
+
+.header .button-add:hover, table .button-table:hover {
+    background-color: #90bc82;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.header #sair-button:hover, table .button-table:hover {
+    background-color: #90bc82;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+tbody {
+    padding: 15px;
+}
+
+input {
+    border: none;
+    appearance: none;
+    background: #cbccba;
+    padding: 12px;
+    border-radius: 5px;
+    width: 500px;
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: #222;
+    transition: color 0.3s ease;
+}
