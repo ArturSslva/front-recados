@@ -1,5 +1,5 @@
 async function getInfo(){
-    const response = await fetch('http://localhost:8080/errands');
+    const response = await fetch('http://localhost:5432/errands');
     const errands = await response.json();
     // console.log(errands);
     
@@ -30,7 +30,7 @@ async function addRecados() {
         content
     }
 
-    await fetch('http://localhost:8080/errands', {
+    await fetch('http://localhost:5432/errands', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -42,7 +42,7 @@ async function addRecados() {
 }
 
 async function excluirRecados(id) {
-    await fetch(`http://localhost:8080/errands${id}`, {
+    await fetch(`http://localhost:5432/errands${id}`, {
         method: "DELETE"
     });
 
@@ -56,7 +56,7 @@ async function alterarRecados(id) {
         content
     };
 
-    await fetch(`http://localhost:8080/errands${id}`, {
+    await fetch(`http://localhost:5432/errands${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
